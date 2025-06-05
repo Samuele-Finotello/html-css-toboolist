@@ -7,7 +7,20 @@
 }
 
 body {
-  background-color: rgb(246, 248, 250);
+  background-color: grey;
+}
+
+ul li {
+  list-style: none;
+}
+
+h3 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+ul ul li span {
+  margin-bottom: 10px;
 }
 
 /* UTILITIES */
@@ -24,6 +37,114 @@ header span {
   margin: 0 auto;
 }
 
+.circle::before {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  vertical-align: middle;
+  text-align: center;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.check::before {
+  content: "\2713";
+  font-size: 10px;
+  border: 1px solid green;
+  color: green;
+}
+
+.cross::before {
+  content: "\2717";
+  font-size: 10px;
+  border: 1px solid red;
+  color: red;
+}
+
+.editorial::after {
+  content: "Editorial";
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 10px;
+  height: 25px;
+  width: 60px;
+  line-height: 25px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: rgb(70, 175, 232);
+  color: white;
+}
+
+.goals::after {
+  content: "Q1 Goals";
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 10px;
+  height: 25px;
+  width: 60px;
+  line-height: 25px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: rgb(152, 117, 223);
+  color: white;
+}
+
+.recruiting::after {
+  content: "Recruiting";
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 10px;
+  height: 25px;
+  width: 60px;
+  line-height: 25px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: rgb(100, 190, 165);
+  color: white;
+}
+
+.mobile::after {
+  content: "Mobile";
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 10px;
+  height: 25px;
+  width: 60px;
+  line-height: 25px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: rgb(244, 158, 39);
+  color: white;
+}
+
+.website::after {
+  content: "Website";
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 10px;
+  height: 25px;
+  width: 60px;
+  line-height: 25px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: rgb(216, 99, 158);
+  color: white;
+}
+
+.sales::after {
+  content: "Sales";
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 10px;
+  height: 25px;
+  width: 60px;
+  line-height: 25px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: rgb(175, 203, 29);
+  color: white;
+}
 
 /* HEADER */
 
@@ -41,7 +162,7 @@ header {
 }
 
 /* MAIN */
-.buttons {
+.testa {
   height: 70px;
   margin-top: 50px;
   line-height: 70px;
@@ -66,4 +187,16 @@ header {
   background-color: white;
   color: rgb(209, 210, 210);
   border: 1px solid rgb(209, 210, 210);
+}
+
+.coda {
+  height: 500px;
+  margin-top: 1px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: white;
+}
+
+.liste {
+  padding-left: 50px;
 }
